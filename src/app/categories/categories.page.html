@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only"  src="../assets/custom-icons/menu/mail.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-img style="height: 40px;" src="../assets/sample-images/logo/black-logo.png"></ion-img>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" src="../assets/custom-icons/menu/cart.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="categories-prueba">
+    <ion-col size="12">
+      <h3 class="category-backfont-title">
+        ¡Bienvenido al mundo Ybera Paris! 
+      </h3>
+      <h3 class="category-backfont">
+        Aquí te revelaremos todos los secretos y tips para el cuidado de tu cabello, además de información
+        valiosa de todos los productos
+      </h3>
+      <app-image-shell [display]="'cover'" class="center" animation="spinner" [src]="'./assets/sample-images/categories/firma.png'">
+        <app-aspect-ratio>
+          <a></a>
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+  </ion-row>
+  <ion-row class="categories-list">
+    
+    <ion-col class="category-item" size="12">
+      <app-image-shell [display]="'cover'" class="category-cover" animation="spinner" [src]="'./assets/sample-images/categories/opc1_alisar.png'">
+        <app-aspect-ratio [ratio]="{w:90, h:30}">
+          <a class="category-anchor" [routerLink]="['/app/categories/alisar']"></a>
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+    <ion-col class="category-item" size="12">
+      <app-image-shell [display]="'cover'" class="category-cover" animation="spinner" [src]="'./assets/sample-images/categories/opc2_reduc_vol.png'">
+        <app-aspect-ratio [ratio]="{w:90, h:30}">
+          <a class="category-anchor" [routerLink]="['/app/categories/reducir-vol']"></a>
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+    <ion-col class="category-item food-category" size="12">
+      <app-image-shell [display]="'cover'" class="category-cover" animation="spinner" [src]="'./assets/sample-images/categories/opc3_crecimiento.png'">
+        <app-aspect-ratio [ratio]="{w:90, h:30}">
+          <a class="category-anchor" [routerLink]="['/app/categories/crecimiento']"></a>
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+    <ion-col class="category-item deals-category" size="12">
+      <app-image-shell [display]="'cover'" class="category-cover" animation="spinner" [src]="'./assets/sample-images/categories/opc4_reconst.png'">
+        <app-aspect-ratio [ratio]="{w:90, h:30}">
+          <a class="category-anchor" [routerLink]="['/app/categories/reconstruccion']"></a>
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="app/categories" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title class="logo">
+      <ion-img style="height: 50px;" src="../assets/sample-images/logo/white-logo1.png"></ion-img>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="user-photos-section">
+  <ion-row class="image-row description-row">
+    <ion-col size="12">
+      <app-image-shell [display]="'cover'" animation="spinner" class="details-image" src="../../assets/sample-images/categories/reducir/reducir.png">
+        <app-aspect-ratio [ratio]="{w:90, h:50}"></app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+    <ion-col size="12">
+      <h3 class="a">
+        Reducir Volumen
+      </h3>
+      <p class="item-description">
+        Ybera Paris ofrece una línea amplia de productos versátiles y de calidad para obtener los resultados 
+        deseados en todos los tipos de cabellos. El cabello rizado o con ondas requiere de un cuidado especial 
+        para lucir hidratado, manejable y sin un volumen excesivo.
+      </p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="pictures-row">
+    <ion-col class="picture-item center" >
+      <app-image-shell [display]="'cover'" src="../../assets/sample-images/categories/reducir/fashion.jpg" class="user-photo-image">
+        <app-aspect-ratio [ratio]="{w:1, h:1}">
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+  </ion-row>
+  <ion-row class="description-row">
+    <ion-col>
+      <p class="item-description">
+        Realiza el test para obtener un diagnóstico personalizado y descubre cómo cuidar de tu cabello con 
+        los productos ideales
+      </p>
+      <ion-button color="primary" expand="block" [routerLink]="['/auth/signup']">Test</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

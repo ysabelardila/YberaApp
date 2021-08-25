@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="app/categories" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title class="logo">
+      <ion-img style="height: 50px;" src="../assets/sample-images/logo/white-logo1.png"></ion-img>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="user-photos-section">
+  <ion-row class="image-row description-row">
+    <ion-col size="12">
+      <app-image-shell [display]="'cover'" animation="spinner" class="details-image" src="../../assets/sample-images/categories/alisar/alisar.png">
+        <app-aspect-ratio [ratio]="{w:90, h:50}">
+        
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+    <ion-col size="12">
+      <h3 class="a">
+        Alisar
+      </h3>
+      <p class="item-description">
+        Los alisados Ybera Paris tienen como objetivo transformar la hebra preservando la salud capilar 
+        y aportando:
+      </p>
+      <ul>
+        <li>Brillo</li>
+        <li>Volumen</li>
+        <li>Manejabilidad</li>
+        <li>Hidratación Profunda</li>
+        <li>Reducción de Frizz</li>
+      </ul>
+    </ion-col>
+  </ion-row>
+  <ion-row class="pictures-row">
+    <ion-col class="picture-item" >
+      <app-image-shell [display]="'cover'" src="../../assets/sample-images/categories/alisar/1-terra.jpg" class="user-photo-image">
+        <app-aspect-ratio [ratio]="{w:1, h:1}">
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+    <ion-col class="picture-item" >
+      <app-image-shell [display]="'cover'" src="../../assets/sample-images/categories/alisar/discovery.jpg" class="user-photo-image">
+        <app-aspect-ratio [ratio]="{w:1, h:1}">
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+    <ion-col class="picture-item center">
+      <app-image-shell [display]="'cover'" src="../../assets/sample-images/categories/alisar/Black-Diva.jpg" class="user-photo-image">
+        <app-aspect-ratio [ratio]="{w:1, h:1}">
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+  </ion-row>
+  <ion-row class="description-row">
+    <ion-col>
+      <p class="item-description">
+        Empieza el test para obtener un diagnóstico personalizado y descubre el producto ideal para ti
+      </p>
+      <ion-button color="primary" expand="block" [routerLink]="['/auth/signup']">Test</ion-button>
+    </ion-col>
+  </ion-row>
+  
+</ion-content>

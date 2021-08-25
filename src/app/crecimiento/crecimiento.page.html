@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="app/categories" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-img style="height: 50px;" src="../assets/sample-images/logo/white-logo1.png"></ion-img>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="image-row description-row">
+    <ion-col size="12">
+      <app-image-shell [display]="'cover'" animation="spinner" class="details-image" src="../../assets/sample-images/categories/crecimiento/crecimiento.png">
+        <app-aspect-ratio [ratio]="{w:90, h:50}">
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+    <ion-col size="12">
+      <h3 class="a">
+        Crecimiento
+      </h3>
+      <p class="item-description">
+        El crecimiento del cabello es uno de los factores que determinan el estado de salud de una hebra capilar, 
+        hoy en día muchas personas sufren de caída de cabello debido a cambios hormonales o sencillamente por 
+        estrés. Ybera Paris ha desarrollado un producto específico para estos casos, Vello. 
+      </p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="pictures-row">
+    <ion-col class="picture-item" >
+      <app-image-shell [display]="'cover'" src="../../assets/sample-images/categories/crecimiento/vello.jpg" class="user-photo-image">
+        <app-aspect-ratio [ratio]="{w:1, h:1}">
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+    <ion-col class="picture-item" >
+      <app-image-shell [display]="'cover'" src="../../assets/sample-images/categories/crecimiento/life.jpg" class="user-photo-image">
+        <app-aspect-ratio [ratio]="{w:1, h:1}">
+        </app-aspect-ratio>
+      </app-image-shell>
+    </ion-col>
+  </ion-row>
+  <ion-row class="description-row">
+    <ion-col>
+      <p class="item-description">
+        Realiza el test para obtener un diagnóstico personalizado y descubre si Vello es lo que necesitas
+      </p>
+      <ion-button color="primary" expand="block" [routerLink]="['/auth/signup']">Test</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

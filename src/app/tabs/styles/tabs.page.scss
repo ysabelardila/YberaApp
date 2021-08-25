@@ -1,0 +1,31 @@
+// Note:  All the CSS variables defined below are overrides of Ionic elements CSS Custom Properties
+ion-tab-button {
+  --color: var(--ion-color-medium-shade);
+  --color-selected: var(--ion-color-dark);
+}
+/*
+ion-tab-bar, ion-tab-button{
+  background-color: #1C1C1C;
+ }
+
+ /*
+ <ion-tabs (ionTabsDidChange)="ionTabsDidChange($event)">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="categories" [routerLinkActive]="['tab-selected']" [routerLink]="['/app/categories']">
+      <ion-icon src="../assets/custom-icons/menu/home.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="shop"  [routerLink]="['/app/notifications']">
+      <ion-icon src="../assets/custom-icons/menu/shop.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="search" [routerLink]="['/app/categories']">
+      <ion-icon src="../assets/custom-icons/menu/search.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="notifications" [routerLinkActive]="['tab-selected']" [routerLink]="['/app/notifications']">
+      <ion-icon size="large" src="../assets/custom-icons/menu/lamp.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="user" [routerLinkActive]="['tab-selected']" [routerLink]="['/app/user']">
+      <ion-icon src="../assets/custom-icons/menu/profile.svg"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+ */
